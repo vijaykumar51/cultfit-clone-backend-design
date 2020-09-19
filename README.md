@@ -18,7 +18,7 @@ I have created this project as my side project. I am a full-stack developer with
       * If the session has started, user will join the session directly.
    8. Trainer should be able to cancel/reschedule/start the session.
    9. Once the user is in the session, user's energy ratings should get recorded in back-end.
-   10. Based on energy ratings, display the rand of the user
+   10. Based on energy ratings, display the rank of the user
    11. Trainers should be able to end session.
    12. View session results (ranking/calories consumed/per minute energy rating).
    13. Trainee should be able to submit feedback for the session.
@@ -30,6 +30,18 @@ I have created this project as my side project. I am a full-stack developer with
    2. Performance => Optimize the APIs so that the system is performant.
    3. Security => Implement proper authentiation and authorization.
    4. API documentation => Prepare proper API specification document using Swagger.
+   
+## Entities and their attributes and behavior
+
+|Entity|Attributes|Behaviors|
+|------|----------|---------|
+|Trainee|full name, email, mobile, password| register, login, view workouts, book workout, join workout, leave workout, rate workout, view workout history|
+|Trainer|full name, email, mobile, isTrainer| register, login, create workout, cancel workout, reschedule workout, start workout, stop workout, view workout history|
+|Workout Types| type(ENUM)|-|
+|Waiting room|||
+|Workout Schedule|workout type (ENUM)||
+|Workout Registration|||
+|EnergyTracker|||
   
   
   
