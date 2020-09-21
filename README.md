@@ -39,13 +39,11 @@ Entities are generally the nouns in our requirements. Behavior is generally the 
 |Trainee|full name, email, mobile, password| register, login, view workouts, book workout, join workout, leave workout, rate workout, record energy during workout, view workout history|
 |Trainer|full name, email, mobile, isTrainer| register, login, create workout, cancel workout, reschedule workout, start workout, stop workout, view workout history|
 |Workout Types| type(ENUM)|-|
-|Workout state| state(ENUM)|-|
 |Workout Schedule|workout type (ENUM), coachId, start date & time, duration, description, workout state(ENUM)|-|
-|Workout Registration|workoutId, userId, workout state(ENUM)|-|
+|Workout Registration|workoutId, userId|-|
 |Energy Tracker|userId, workoutId, time, energy|-|
 |Session Result|userId, workoutId, user rank, calories burned, activity duration|-|
 
-TODO: decide if it makes sense to store workout state in DB, it could be in codebase since it won't change<br>
 TODO: In session result, decide if/how we want to show per minute stats
   
   
